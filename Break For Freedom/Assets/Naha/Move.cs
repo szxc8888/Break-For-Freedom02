@@ -11,7 +11,6 @@ public class Move : MonoBehaviour
     public Sprite moguraImage;
     public Sprite moguraImage2;
     public Sprite moguraImage3;
-     //  public bool isActive = true;
 
 
 
@@ -22,7 +21,6 @@ public class Move : MonoBehaviour
         this.wear2 = GameObject.Find("wear2");
         this.wear3 = GameObject.Find("wear3");
 
-        this.key1 = GameObject.Find("key1");
         this.Door1 = GameObject.Find("Door1");
 
  
@@ -61,22 +59,19 @@ public class Move : MonoBehaviour
         if (other.gameObject.tag == "wear1")
         {
 
-            this.tag = "wear1";                // タグを変更する
+            this.tag = "wear1";                // タグをwear1に変更する
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
             renderer.sprite = moguraImage;     // 画像変更枠追加
-
             // Destroy(wear1);      // Wear1削除
-            //   wear1.SetActive(true);
         }
 
 
         // Wear2に触れたら着替える
         if (other.gameObject.tag == "wear2")
         {
-            this.tag = "wear2";                // タグを変更する
+            this.tag = "wear2";                // タグをwear2に変更する
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
             renderer.sprite = moguraImage2;    // 画像変更枠追加
-
             //  Destroy(wear1);    // Wear1削除
             //  Destroy(wear2);    // Wear2削除
         }
@@ -84,10 +79,9 @@ public class Move : MonoBehaviour
         // Wear3に触れたら着替える
         if (other.gameObject.tag == "wear3")
         {
-            this.tag = "wear3";                // タグを変更する
+            this.tag = "wear3";                // タグをwear3の変更する
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
             renderer.sprite = moguraImage3;    // 画像変更枠追加
-
             //  Destroy(wear1);      // Wear1削除
             //  Destroy(wear2);      // Wear2削除
             //  Destroy(wear3);      // Wear3削除
