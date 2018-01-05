@@ -12,6 +12,7 @@ public class Wear1 : MonoBehaviour {
     public Sprite moguraImage;
     public Sprite moguraImage2;
     public Sprite moguraImage3;
+    public AudioClip sound;
 
      //  public bool isActive = true;
 
@@ -43,7 +44,7 @@ public class Wear1 : MonoBehaviour {
         if (other.gameObject.tag == "wear1")
 
         {
-            
+            AudioSource.PlayClipAtPoint(sound, transform.position);
             this.tag = "wear1";                // タグを変更する
            
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
@@ -57,6 +58,7 @@ public class Wear1 : MonoBehaviour {
         // Wear2に触れたら着替える
         if (other.gameObject.tag == "wear2")
         {
+            AudioSource.PlayClipAtPoint(sound, transform.position);
             this.tag = "wear2";                // タグを変更する
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
             renderer.sprite = moguraImage2;    // 画像変更枠追加
@@ -69,6 +71,7 @@ public class Wear1 : MonoBehaviour {
         if (other.gameObject.tag == "wear3")
 
         {
+            AudioSource.PlayClipAtPoint(sound, transform.position);
 
             this.tag = "wear3";                // タグを変更する
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
