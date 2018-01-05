@@ -26,7 +26,6 @@ public class Wear1 : MonoBehaviour {
         this.wear2 = GameObject.Find("wear2");
         this.wear3 = GameObject.Find("wear3");
 
-        this.key1 = GameObject.Find("key1");
         this.Door1 = GameObject.Find("Door1");
 
     }
@@ -49,9 +48,7 @@ public class Wear1 : MonoBehaviour {
            
             SpriteRenderer renderer = gameObject.GetComponent<SpriteRenderer>();        // 画像を差し替える
             renderer.sprite = moguraImage;     // 画像変更枠追加
-
              Destroy(gameObject);      // Wear1削除
-            //   wear1.SetActive(true);
         }
 
 
