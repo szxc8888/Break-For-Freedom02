@@ -1,8 +1,9 @@
 ﻿using System.Collections;
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ClearDirector : MonoBehaviour {
+public class HelpDirector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +14,7 @@ public class ClearDirector : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene("GameTitle");
+            SceneManager.LoadScene("Enemy");
         }
 	}
 }
