@@ -23,7 +23,8 @@ public class Enemy4 : MonoBehaviour
       //  }
         if (other.gameObject.tag == "wear3")    // 〇〇の場合
         {
-            SceneManager.LoadScene("Enemy");    // Enemy4に触れたらGAMEOVER
+
+            SceneManager.LoadScene("Stage01");    // Enemy4に触れたらGAMEOVER
         }
     }
 }
