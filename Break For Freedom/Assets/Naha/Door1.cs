@@ -40,23 +40,23 @@ public class Door1 : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Stage01");
         }
         if (other.gameObject.tag == "wear1")
         {
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Stage01");
         }
         if (other.gameObject.tag == "wear2")
         {
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Stage01");
         }
         if (other.gameObject.tag == "wear3")
         {
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Stage01");
         }
         if (other.gameObject.tag == "wear4")
         {
-            SceneManager.LoadScene("GameClear");
+            SceneManager.LoadScene("Stage01");
         }
     }
 }
