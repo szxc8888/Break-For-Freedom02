@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Enemy3 : MonoBehaviour
 {
-
+   
+    void Start(){
+    }
     // Enemy3の当たり判定
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,7 +19,7 @@ public class Enemy3 : MonoBehaviour
         //   {
         //       SceneManager.LoadScene("Enemy");    // Enemy2,3に触れたらGAMEOVER
         //   }
-        if (other.gameObject.tag == "wear2")    // 〇〇の場合
+        if (other.gameObject.tag == "wear2")         // 〇〇の場合
         {
             SceneManager.LoadScene("Stage01");    // Enemy3に触れたらGAMEOVER
         }

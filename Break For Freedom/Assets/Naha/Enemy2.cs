@@ -6,6 +6,13 @@ using UnityEngine.SceneManagement;
 public class Enemy2 : MonoBehaviour
 {
 
+    private static GameObject bikkuri;
+
+    void Start()
+    {
+        bikkuri = GameObject.Find("bikkuri");
+
+    }
     // Enemy2の当たり判定
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,4 +28,3 @@ public class Enemy2 : MonoBehaviour
     }
 
 }
-
