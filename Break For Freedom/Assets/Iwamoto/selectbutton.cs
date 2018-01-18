@@ -12,7 +12,7 @@ public class selectbutton : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Button1 = GameObject.Find("/Canvas/Panel/Button1").GetComponent<Button>();
+        Button1 = GameObject.Find("/Canvas/Button1").GetComponent<Button>();
 
         Button1.Select();
     }
