@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class HelpDirector : MonoBehaviour {
+public class HelpDirector1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class HelpDirector : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene("Stage01");
+            SceneManager.LoadScene("Stage02");
         }
 	}
 }
