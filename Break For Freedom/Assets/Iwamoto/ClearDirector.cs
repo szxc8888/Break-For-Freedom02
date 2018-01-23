@@ -13,7 +13,7 @@ public class ClearDirector : MonoBehaviour {
 	void Update () {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene("GameTitle");
+            SceneManager.LoadScene("GameTitle 2");
         }
 	}
 }
