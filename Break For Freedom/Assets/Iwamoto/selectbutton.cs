@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class selectbutton : MonoBehaviour
 {
     Button Button1;
-    //public GameObject startbutton;
 
     // Use this for initialization
     void Start()
     {
-        Button1 = GameObject.Find("/Canvas/Button1").GetComponent<Button>();
+
+        Button1 = GameObject.Find("Canvas/Button1").GetComponent<Button>();
 
         Button1.Select();
     }
@@ -20,9 +20,6 @@ public class selectbutton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKey(KeyCode.Space))
-        //{
-        //    SceneManager.LoadScene("GameSelect");
-        //}
+        
     }
 }
