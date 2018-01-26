@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearDirector : MonoBehaviour {
+public class TitleDirector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,9 +11,9 @@ public class ClearDirector : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.LoadScene("GameTitle 2");
+            Application.Quit();
         }
 	}
 }
