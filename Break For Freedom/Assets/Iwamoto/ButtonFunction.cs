@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunction : MonoBehaviour
 {
+    
     public void StringArgFunction(string s)
     {
         if (Input.GetKey(KeyCode.Space))
         {
+            
             SceneManager.LoadScene(s);
         }
     }
