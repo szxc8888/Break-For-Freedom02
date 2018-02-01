@@ -10,7 +10,7 @@ public class ButtonFunction : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            
+
             SceneManager.LoadScene(s);
 
         }
